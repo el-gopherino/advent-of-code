@@ -1,3 +1,5 @@
+// https://adventofcode.com/2025/day/1
+// PART 1
 package main
 
 import (
@@ -6,10 +8,6 @@ import (
 	"os"
 	"strconv"
 )
-
-// https://adventofcode.com/2025/day/1
-
-// PART 1
 
 func calibrate(originalPosition, turns int) (result int) {
 	result = (originalPosition + turns) % 100
@@ -34,7 +32,7 @@ func calculate(currentLine string, currentPosition int) int {
 
 func main() {
 
-	file, err := os.Open("day_one_input.txt")
+	file, err := os.Open("./2025/day_one/input.txt")
 	if err != nil {
 		panic(err)
 	}
@@ -56,7 +54,7 @@ func main() {
 
 		if nextPos == 0 {
 			zeroes++
-			fmt.Printf("Found zero!!! zeroes encountered: %d\n", zeroes)
+			fmt.Printf("Found zero.\t\t zeroes encountered:  %d\n", zeroes)
 		}
 		currentPosition = nextPos
 	}
