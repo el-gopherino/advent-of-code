@@ -42,7 +42,7 @@ func main() {
 		totalZeroes     = 0
 	)
 
-	file, err := os.Open("./2025/day_one/input.txt")
+	file, err := os.Open("./2025/day1/input.txt")
 	if err != nil {
 		panic(err)
 	}

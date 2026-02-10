@@ -1,1 +1,1 @@
-My implementations of the advent of code problems in golang. 
+My implementations of the advent of code 2025 problems in golang. 
